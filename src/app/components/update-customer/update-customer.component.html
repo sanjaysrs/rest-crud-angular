@@ -1,0 +1,20 @@
+
+<h1>Customer Details</h1>
+
+  <ul>
+    <li> {{customer?.id}} </li>
+    <li> {{customer?.name}} </li>
+    <li> {{customer?.email}} </li>
+    <li> {{customer?.phone}} </li>
+  </ul>
+
+  <br><br><br>
+
+  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <input formControlName="name" placeholder="Name">
+    <input formControlName="email" placeholder="Email">
+    <input formControlName="phone" placeholder="Phone">
+    <button type="submit">Update</button>
+  </form>
+
+

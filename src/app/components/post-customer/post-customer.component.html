@@ -1,0 +1,13 @@
+<h1>Post Customer</h1>
+
+<form [formGroup]="postCustomerForm" (ngSubmit)="postCustomer()" >
+  <input formControlName="name" placeholder="Name">
+  <input formControlName="email" placeholder="Email">
+  <input formControlName="phone" placeholder="Phone">
+  <button type="submit">Post</button>
+</form>
+
+<div>
+  <br>
+  <button routerLink="" >All Customers</button>
+</div>
